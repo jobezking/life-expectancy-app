@@ -6,8 +6,8 @@ flask run
 sensible-browser [http://localhost:8888](http://localhost:8888) 
 
 To run in Docker (Docker commands may require sudo):   
-docker build \-t life-expectancy-app . &  
-docker run \-p 8888:8888 life-expectancy-app   
+docker build \-t life-expectancy-app .  
+docker run \-p 8888:8888 life-expectancy-app &  
 sensible-browser http://localhost:8888  
 When done:  
 docker ps   
@@ -15,7 +15,7 @@ docker ps
 docker kill interesting\_less
 
 To run in Docker Compose (Docker commands may require sudo):  
-docker compose up \--build &  
+docker compose up \--build \-d  
 sensible-browser http://localhost:8888  
 docker compose down
 
