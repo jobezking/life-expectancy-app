@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: life-expectancy-container
+    ports:
+      - "8888:8888"
+    env_file: .env
+    volumes:
+      - .:/app
